@@ -5,13 +5,13 @@
 
 :root { 
     /*variaveis pra facilitar mudar algo*/
-    --cor-primaria: #4C1036;
-    --cor-secundaria: #F4C095;
-    --cor-terciaria: #C58981;
-    --cor-destaque: #416788;
+    --cor-primaria: #AAB396;
+    --cor-secundaria: #FFF8E8;
+    --cor-terciaria: #F7EED3;
+    --cor-destaque: #674636;
 
-    --cor-hover-box: #507DA5;
-    --cor-hover-shadow: #120902;
+    --cor-hover-box: #9FA989;
+    --cor-hover-shadow: #50372A;
 
     --fonte-primaria: "Quicksand", sans-serif;
     --fonte-secundaria: "Playwrite DE Grund", cursive;
@@ -67,7 +67,7 @@ body {
     display: flex; /*coloca os elementos em linha */
     align-items: center; /*alinha entre os itens de acordo com o item de maior altura*/
     justify-content: space-around;
-    gap: 50px;
+    gap: 45px;
 
 }
 
@@ -136,12 +136,12 @@ body {
     font-size: 1.5rem;
     border-radius: 8px;
     text-decoration: none; /*tira o sublinhado do url*/
-    color: var(--cor-terciaria);
+    color: var(--cor-destaque);
     font-family: var(--fonte-primaria);
     font-weight: 600;
     transition: 1s;
     cursor: pointer;
-    box-shadow: 8px 8px var(--cor-terciaria);
+    box-shadow: 8px 8px var(--cor-destaque);
 
 }
 
@@ -155,7 +155,7 @@ body {
 .apresentacao__imagem {
     width: 50%;
     border-radius: 16px;
-    box-shadow: 8px 8px var(--cor-terciaria);
+    box-shadow: 8px 8px var(--cor-destaque);
 }
 
 .apresentacao__montagem {
@@ -174,7 +174,7 @@ body {
 }
 
 .rodape__assinatura {
-    color: var(--cor-hover-shadow);
+    color: var(--cor-destaque);
     text-align: center;
     font-family: var(--fonte-secundaria);
     font-size: 0.9rem;
