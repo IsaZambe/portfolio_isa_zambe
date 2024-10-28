@@ -165,6 +165,7 @@ body {
 .icone__botao .apresentacao__links__link {
     text-align: center;
 }
+
 .apresentacao__links__link:hover {
     background-color: var(--cor-hover-box);
     box-shadow: 8px 8px var(--cor-hover-shadow);
@@ -191,6 +192,7 @@ body {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: end;
+    
 
 }
 
