@@ -6,13 +6,13 @@
 
 :root { 
     /*variaveis pra facilitar mudar algo*/
-    --cor-primaria: #AAB396;
+    --cor-primaria: #A07293;
     --cor-secundaria: #FFF8E8;
     --cor-terciaria: #F7EED3;
-    --cor-destaque: #674636;
+    --cor-destaque: #4b0737;
 
-    --cor-hover-box: #9FA989;
-    --cor-hover-shadow: #50372A;
+    --cor-hover-box: #4b0737;
+    --cor-hover-shadow: #58334f;
 
     --fonte-primaria: "Quicksand", sans-serif;
     --fonte-secundaria: "Playwrite DE Grund", cursive;
@@ -142,35 +142,8 @@ body {
     font-weight: 600;
 }
 
-.apresentacao__links__link {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    border: 1px solid var(--cor-secundaria);
-    width: 378px;
-    padding: 16px; 
-    text-align: center;
-    font-size: 1.5rem;
-    border-radius: 8px;
-    text-decoration: none; /*tira o sublinhado do url*/
-    color: var(--cor-destaque);
-    font-family: var(--fonte-primaria);
-    font-weight: 600;
-    transition: 1s;
-    cursor: pointer;
-    box-shadow: 8px 8px var(--cor-destaque);
-
-}
-
 .icone__botao .apresentacao__links__link {
     text-align: center;
-}
-
-.apresentacao__links__link:hover {
-    background-color: var(--cor-hover-box);
-    box-shadow: 8px 8px var(--cor-hover-shadow);
-    font-size: 1.2rem;
-    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__imagem {
@@ -261,19 +234,26 @@ body {
   }
   
   .apresentacao__links__link{
-    display: block;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px; 
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1.2rem;
     width: 200px;
     height: 40px;
     line-height: 40px;
-    font-size: 18px;
-    font-family: sans-serif;
     text-decoration: none;
-    color: #333;
-    border: 2px solid #333;
+    color: var(--cor-terciaria);
+    border: 2px solid var(--cor-destaque);
+    border-radius: 8px;
     letter-spacing: 2px;
     text-align: center;
     position: relative;
     transition: all .35s;
+    cursor: pointer;
+    box-shadow: 8px 8px var(--cor-hover-shadow);
   }
   
   .apresentacao__links__link span{
@@ -288,7 +268,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--cor-hover-shadow);
+    background: var(--cor-hover-box);
     transition: all .35s;
   }
   
