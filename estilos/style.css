@@ -250,3 +250,52 @@ body {
     }
      
 }
+
+/* Botões */
+
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .apresentacao__links__link{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  .apresentacao__links__link span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .apresentacao__links__link:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--cor-hover-shadow);
+    transition: all .35s;
+  }
+  
+  .apresentacao__links__link:hover{
+    color: #fff;
+  }
+  
+  .apresentacao__links__link:hover:after{
+    width: 100%;
+  }
