@@ -1,11 +1,13 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund&family=Quicksand:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund&family=Quicksand:wght@600&display=swap');
-
-
-:root { 
-    /*variaveis pra facilitar mudar algo*/
+body {
+    /*variaveis*/
     --cor-primaria: #A07293;
     --cor-secundaria: #FFF8E8;
     --cor-terciaria: #F7EED3;
@@ -14,268 +16,43 @@
     --cor-hover-box: #4b0737;
     --cor-hover-shadow: #58334f;
 
-    --fonte-primaria: "Quicksand", sans-serif;
-    --fonte-secundaria: "Playwrite DE Grund", cursive;
-}
+    --cor-branca: #fefefe;
+    --cor-preta: #000000;
 
-* { /* o asterisco seleciona todos os elementos */
-    margin: 0;
-    padding: 0;
-    border: 0;
-} /* coloca zero pra resetar as config que vem do proprio browser */
+    --fonte-primaria: "Martian Mono", monospace;
 
-html {
-    height: 100%; /*pro conteudo pegar na pag toda = html/body/container */
-}
-
-body {
-    box-sizing: border-box; /*todo conteudo fica dentro do body, n sai dos lados*/
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
     height: 100%;
-
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.cabecalho {
-    padding: 1% 8%;
-    background-color: var(--cor-terciaria);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
-}
-
-.cabecalho__menu {
-    text-align: left;
-    display: flex;
-    gap: 80px;
-}
-
-.cabecalho__lang {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.cabecalho__lang__menu {
-    display: flex;
-}
-
-.cabecalho__lang__menu__eng {
-    text-decoration: none;
-    padding: 5px;
-    color: #000;
-}
-
-.cabecalho__menu__link {
-    font-family: var(--fonte-secundaria);
-    font-size: 1.25rem;
-    font-weight: 300;
-    color: var(--cor-destaque);
-    text-decoration: none;
-}
-
-.apresentacao {
-    padding: 5% 8%;
-    display: flex; /*coloca os elementos em linha */
-    align-items: center; /*alinha entre os itens de acordo com o item de maior altura*/
-    justify-content: space-around;
-    gap: 45px;
-
-}
-
-.apresentacao__conteudo {
-    width: 50%;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-
-}
-
-.apresentacao__conteudo__titulo {
-    font-size: 2.13rem;
-    font-family: var(--fonte-secundaria);
-}
-
-.destaque {
-    color: var(--cor-destaque)
-}
-
-.descricao__conteudo__subtitulo {
-    font-size: 1.6rem;
-    font-family: var(--fonte-secundaria);
-}
-
-.apresentacao__conteudo__texto {
     font-family: var(--fonte-primaria);
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-align: justify;
-
+    color: var(--cor-preta);
 }
 
-.descricao__conteudo__lista {
-    font-family: var(--fonte-primaria);
-    font-size: 1.25rem;
-    font-weight: 300;
-    text-align: justify;
+/* header */
 
+.bg-white {
+    background-color: var(--cor-branca) !important;
 }
 
-.apresentacao__links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px;
-}
+/* banners */
 
-.apresentacao__links__subtitulo {
-    font-size: 1.5rem;
-    font-family: var(--fonte-primaria);
-    font-weight: 600;
-}
-
-.icone__botao .apresentacao__links__link {
-    text-align: center;
-}
-
-.apresentacao__imagem {
-    width: 45%;
-    border-radius: 16px;
-    box-shadow: 8px 8px var(--cor-destaque);
-}
-
-.apresentacao__montagem {
-    width: 40%;
-
-}
-
-.rodape {
-    padding: 1%;
-    height: 35px;
-    background-color: var(--cor-terciaria);
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: end;
-    
-
-}
-
-.rodape__assinatura {
-    color: var(--cor-destaque);
-    text-align: center;
-    font-family: var(--fonte-secundaria);
-    font-size: 0.9rem;
-    font-weight: 300;
-
-}
-
-.rodape__contato {
-    font-family: var(--fonte-primaria);
-    font-weight: 600;
-    text-align: center;
-    font-size: 0.6rem;
-    color: var(--cor-destaque);
-}
-
-
-@media (max-width: 768px) {
-    .cabecalho {
-        padding: 3%;
-        width: 100%;
-    }
-
-    .cabecalho__menu {
-        justify-content: center;
-        gap: 25px;
-    }
-
-    .apresentacao {
-        flex-direction: column-reverse;
-        padding: 8%;
-    }
-
-    .apresentacao__conteudo {
-        width: 100%;
-        padding-right: 0; /*tira o excesso de padding pra mobile*/
-    }
-
-    .apresentacao__imagem {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .apresentacao__links__link {
-        width: 100%;
-    }
-
-    .rodape {
-        width: 100%;
-        padding: 3%;
-    }
-     
-}
-
-/* Botões */
-
-.wrapper{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .apresentacao__links__link{
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    padding: 16px; 
-    text-align: center;
-    font-family: var(--fonte-primaria);
-    font-size: 1.2rem;
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    text-decoration: none;
-    color: var(--cor-terciaria);
-    border: 2px solid var(--cor-destaque);
-    border-radius: 8px;
-    letter-spacing: 2px;
-    text-align: center;
-    position: relative;
-    transition: all .35s;
-    cursor: pointer;
-    box-shadow: 8px 8px var(--cor-hover-shadow);
-  }
-  
-  .apresentacao__links__link span{
-    position: relative;
-    z-index: 2;
-  }
-  
-  .apresentacao__links__link:after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--cor-hover-box);
-    transition: all .35s;
-  }
-  
-  .apresentacao__links__link:hover{
-    color: #fff;
-  }
-  
-  .apresentacao__links__link:hover:after{
+.banners {
     width: 100%;
-  }
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*imagem fixa quando rola = paralax*/
+}
+
+.banner-1 {
+    background-image: url(/assets/curriculo.jpg);
+}
+
+.banner-2 {
+    background-image: url(/assets/isabela.jpeg);
+}
+
+.banners-titulo {
+    --bs-bg-opacity: .3;
+    /*valores de 0 a 1*/
+}

@@ -1,59 +1,208 @@
-<!--alt+z quebra a linha pra caber no espaço-->
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8"> <!--identifica caracteres de várias línguas-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--pro edge-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport é o dispositivo, pega a largura pra basear no dispositivo-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Isabela</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./estilos/style.css"> <!--pra linkar os arquivos html com o css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./estilos/style.css">
     <link rel="icon" type="image/x-icon" href="./assets/favicon_logo_portfolio_s_black.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <header class="cabecalho">
-            <nav class="cabecalho__menu"> <!--navegacao-->
-                <a class="cabecalho__menu__link" href="index.html">Início</a>
-                <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-                <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
-            </nav>
-            <div class="cabecalho__lang">
-                <div class="cabecalho__lang__menu"> 
-                    <a class="cabecalho__lang__menu__eng" href="index.html">PT</a>
-                    <a class="cabecalho__lang__menu__eng" href="index(en).html">EN</a>
+
+    <!-- HEARDER -->
+
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+                <img class="" src="./assets/logo_portfolio_black.png" alt="Logo Isabela Silveira Zambe" height="60px"
+                    width="100px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobreMim">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#meusProjetos">Projetos</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Contato
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="https://github.com/IsaZambe" target="_blank"><i
+                                        class="bi bi-github me-2"></i>GitHub</a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://www.linkedin.com/in/isabelazambe/"
+                                    target="_blank"><i class="bi bi-linkedin me-2 text-primary"></i>Linkedin</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="d-flex flex-start">
+                    <div class="d-flex gap-2">
+                        <a class="text-secondary-emphasis link-underline link-underline-opacity-0"
+                            href="index.html">PT</a>
+                        <a class="text-secondary-emphasis link-underline link-underline-opacity-0"
+                            href="index(en).html">EN</a>
+                    </div>
                 </div>
             </div>
-        </header> <!--cabeçalho-->
-    </div>
-        <main class="apresentacao">
-            <section class="apresentacao__conteudo"> <!--elemento pai _ _ nome da classe--> <!--pra separar os elementos que vc quiser-->
-                <h1 class="apresentacao__conteudo__titulo">Fique por dentro da minha evolução no <strong class="destaque">Front-end <em>e</em> Programação!</strong></h1> <!--strong destaca o texto em negrito e em fica em italico-->
-                <p class="apresentacao__conteudo__texto">Olá! Sou Isabela Zambe, sou estudante de Front-end na ALURA, começando minha caminhada. Me formei em Farmácia pela EMESCAM-Vitória à alguns muitos anos atrás, mas agora decidi mudar de carreira e seguir na programação. Estou muito empolgada e ansiosa para aprender o máximo e elevar meus conhecimentos. <strong class="destaque">Vamos trocar uma ideia?</strong></p>
-                <div class="apresentacao__links">
-                    <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
 
-                    <a class="apresentacao__links__link" href="https://www.instagram.com/iszambe/" target="_blank"><span>Instagram</span></a>
-                    
+        </div>
+    </nav>
 
-                    <a class="apresentacao__links__link" href="https://github.com/IsaZambe" target="_blank"> <span>GitHub</span></a>
+    <!-- MAIN -->
+    <main data-bs-spy="scroll" data-bs-target="#navId">
 
-                    <a class="apresentacao__links__link" href="https://www.linkedin.com/in/isabelazambe/" target="_blank"> <span>LinkedIn</span></a>
-
-                </div>
-            </section>
-            <img class="apresentacao__imagem" src= "assets/isabela.jpeg" alt="Foto de Isabela Zambe bonitinha">
-        </main> <!--corpo-->
-        <footer class="rodape">
-            <p class="rodape__assinatura">Desenvolvido por Isabela Zambe!</p>
-            <div class="rodape__contato">
-                <p>Contato:</p>
-                <p>isabela@zambe.com.br</p>
-                <p>+55 (27) 9 9926-1141</p>
+        <!-- BANNER 1 -->
+        <section class="banners banner-1 d-flex flex-column justify-content-center text-center" id="home">
+            <div class="banners-titulo bg-body-secondary py-5">
+                <h2 class="fw-bold">Portfólio de Isabela Zambe</h2>
+                <p class="fs-5 text-break">Boas vindas ao meu porfólio. Desenvolvido pra acompanhar minha evolução na
+                    área de programação
+                    front-end.</p>
             </div>
-        </footer> <!--rodapé-->
-    </div>
+        </section>
+
+        <!-- CARD 1 -->
+        <div class="card m-5 border-0" id="sobreMim">
+            <h2 class="text-center">Apresetação!</h2>
+            <div class="card-body">
+                Olá! Sou Isabela, nascida em 1993, em Vitória-ES. Atualmente graduanda em Análise e Desenvolvimento de
+                Sistemas, começando minha caminhada na área de Desenvolvimento Web. Me formei inicialmente em Farmácia
+                pela EMESCAM-Vitória à alguns muitos anos atrás, mas
+                agora decidi mudar de carreira e seguir na programação. Transição de carreira não é uma jornada fácil de
+                seguir, mas com muita determinação e força de vontade conseguimos alcançar nossos objetivos. Vamos
+                trocar uma ideia?
+            </div>
+        </div>
+
+        <!-- BANNER 2 -->
+        <section class="banners banner-2 d-flex flex-column justify-content-center text-center" id="meusProjetos">
+            <div class="banners-titulo bg-body-secondary py-5">
+                <h2 class="fw-bold">Projetos disponíveis</h2>
+                <p class="fs-5 text-break">A parte mais importante na nossa evolução profissional é o desenvolvimento de
+                    projetos, que nos possibilita 'botar a mão na massa' e praticar noassas habilidades. </p>
+            </div>
+        </section>
+
+        <!-- CARD 2 -->
+        <div class="row">
+
+            <!-- card-1 -->
+            <div class="card m-5 col-3">
+                <img class="img-fluid" src="./assets/montagem-familia.png" alt="" height="20px" width="50px">
+                <div class="card-body">
+                    <h5 class="card-title">TÍTULO DO PROJETO</h5>
+                    <p class="card-text">DESCRIÇÃO DO PROJETO.</p>
+                    <a href="#" class="btn btn-primary">VISITAR SITE DO PROJETO</a>
+                </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="card m-5 col-3">
+                <img class="img-fluid" src="./assets/montagem-familia.png" alt="" height="20px" width="50px">
+                <div class="card-body">
+                    <h5 class="card-title">TÍTULO DO PROJETO</h5>
+                    <p class="card-text">DESCRIÇÃO DO PROJETO.</p>
+                    <a href="#" class="btn btn-primary">VISITAR SITE DO PROJETO</a>
+                </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="card m-5 col-3">
+                <img class="img-fluid" src="./assets/montagem-familia.png" alt="" height="20px" width="50px">
+                <div class="card-body">
+                    <h5 class="card-title">TÍTULO DO PROJETO</h5>
+                    <p class="card-text">DESCRIÇÃO DO PROJETO.</p>
+                    <a href="#" class="btn btn-primary">VISITAR SITE DO PROJETO</a>
+                </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="card m-5 col-3">
+                <img class="img-fluid" src="./assets/montagem-familia.png" alt="" height="20px" width="50px">
+                <div class="card-body">
+                    <h5 class="card-title">TÍTULO DO PROJETO</h5>
+                    <p class="card-text">DESCRIÇÃO DO PROJETO.</p>
+                    <a href="#" class="btn btn-primary">VISITAR SITE DO PROJETO</a>
+                </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="card m-5 col-3">
+                <img class="img-fluid" src="./assets/montagem-familia.png" alt="" height="20px" width="50px">
+                <div class="card-body">
+                    <h5 class="card-title">TÍTULO DO PROJETO</h5>
+                    <p class="card-text">DESCRIÇÃO DO PROJETO.</p>
+                    <a href="#" class="btn btn-primary">VISITAR SITE DO PROJETO</a>
+                </div>
+            </div>
+
+            <!-- card-6 -->
+            <div class="card m-5 col-3">
+                <img class="img-fluid" src="./assets/montagem-familia.png" alt="" height="20px" width="50px">
+                <div class="card-body">
+                    <h5 class="card-title">TÍTULO DO PROJETO</h5>
+                    <p class="card-text">DESCRIÇÃO DO PROJETO.</p>
+                    <a href="#" class="btn btn-primary">VISITAR SITE DO PROJETO</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="card">
+            <div class="card-body text-center px-1 pt-1">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p class="fs-6">"Até porque, para nós, gatos, todas as coisas deste vasto mundo em que é
+                            possível subir são
+                            consideradas vias públicas de acesso livre."</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Relatos de um gato viajante por <cite title="Source Title">hiro Arikawa</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
-
-
