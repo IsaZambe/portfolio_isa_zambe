@@ -10,34 +10,29 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./estilos/style.css">
-    <link rel="icon" type="image/x-icon" href="./assets/favicon_logo_portfolio_s_black.ico" />
+    <link rel="icon" type="image/x-icon" href="./assets/imagens/favicon_logo_portfolio_s_black.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <!-- HEARDER -->
-
-    <nav class="navbar navbar-expand-lg bg-white fixed-top">
-        <div class="container-fluid">
-
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm d-flex justify-content-between">
+        <div class="container mx-1">
             <a class="navbar-brand" href="#">
-                <img class="" src="./assets/logo_portfolio_black.png" alt="Logo Isabela Silveira Zambe" height="60px"
-                    width="100px">
+                <img class="" src="./assets/imagens/logo_portfolio_black.png" alt="Logo Isabela Silveira Zambe"
+                    height="60px" width="100px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Início</a>
+                        <a class="nav-link active" href="#home">Início</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#sobreMim">Sobre mim</a>
@@ -47,8 +42,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                             Contato
                         </a>
 
@@ -67,12 +61,10 @@
                     </li>
                 </ul>
 
-                <div class="d-flex flex-start">
-                    <div class="d-flex gap-2">
-                        <a class="text-secondary-emphasis link-underline link-underline-opacity-0"
-                            href="index.html">PT</a>
-                        <a class="text-secondary-emphasis link-underline link-underline-opacity-0"
-                            href="index(en).html">EN</a>
+                <div class="d-flex gap-2">
+                    <div class="d-flex justify-content-end gap-2">
+                        <a class="text-secondary-emphasis text-decoration-none" href="index.html">PT</a>
+                        <a class="text-secondary-emphasis text-decoration-none" href="index(en).html">EN</a>
                     </div>
                 </div>
             </div>
@@ -81,117 +73,81 @@
     </nav>
 
     <!-- MAIN -->
-    <main data-bs-spy="scroll" data-bs-target="#navId">
+    <main data-bs-spy="scroll" data-bs-target="#navbarSupportedContent">
 
         <!-- BANNER 1 -->
-        <section class="banners banner-1 d-flex flex-column justify-content-center text-center" id="home">
-            <div class="banners-titulo bg-body-secondary py-5">
-                <h2 class="fw-bold">Portfólio de Isabela Zambe</h2>
-                <p class="fs-5 text-break">Boas vindas ao meu porfólio. Desenvolvido pra acompanhar minha evolução na
+        <section class="banners banner-1 d-flex align-items-center justify-content-center text-center min-vh-100"
+            id="home">
+            <div class="banners-titulo bg-body-secondary py-5 px-3">
+                <h2 class="fw-bold text-uppercase">Portfólio de Isabela Zambe</h2>
+                <p class="fs-5 text-break lead">Boas vindas ao meu porfólio. Desenvolvido pra acompanhar minha evolução
+                    na
                     área de programação
                     front-end.</p>
             </div>
         </section>
 
-        <!-- CARD 1 -->
-        <div class="card m-5 border-0" id="sobreMim">
-            <h2 class="text-center">Apresetação!</h2>
-            <div class="card-body">
-                Olá! Sou Isabela, nascida em 1993, em Vitória-ES. Atualmente graduanda em Análise e Desenvolvimento de
-                Sistemas, começando minha caminhada na área de Desenvolvimento Web. Me formei inicialmente em Farmácia
-                pela EMESCAM-Vitória à alguns muitos anos atrás, mas
-                agora decidi mudar de carreira e seguir na programação. Transição de carreira não é uma jornada fácil de
-                seguir, mas com muita determinação e força de vontade conseguimos alcançar nossos objetivos. Vamos
-                trocar uma ideia?
+        <!-- SOBRE MIM -->
+        <section class="py-5" id="sobreMim">
+            <div class="container">
+                <h2 class="text-center mb-4">Apresetação!</h2>
+                <div class="card border-0">
+                    Olá! Sou Isabela, nascida em 1993, em Vitória-ES. Atualmente graduanda em Análise e Desenvolvimento
+                    de
+                    Sistemas, começando minha caminhada na área de Desenvolvimento Web. Me formei inicialmente em
+                    Farmácia
+                    pela EMESCAM-Vitória à alguns muitos anos atrás, mas
+                    agora decidi mudar de carreira e seguir na programação. Transição de carreira não é uma jornada
+                    fácil de
+                    seguir, mas com muita determinação e força de vontade conseguimos alcançar nossos objetivos. Vamos
+                    trocar uma ideia?
+                </div>
             </div>
-        </div>
+        </section>
 
         <!-- BANNER 2 -->
-        <section class="banners banner-2 d-flex flex-column justify-content-center text-center" id="meusProjetos">
-            <div class="banners-titulo bg-body-secondary py-5">
-                <h2 class="fw-bold">Projetos disponíveis</h2>
-                <p class="fs-5 text-break">A parte mais importante na nossa evolução profissional é o desenvolvimento de
+        <section class="banners banner-2 d-flex align-items-center justify-content-center text-center min-vh-100"
+            id="meusProjetos">
+            <div class="banners-titulo bg-body-secondary py-5 px-3">
+                <h2 class="fw-bold text-uppercase">Projetos disponíveis</h2>
+                <p class="fs-5 text-break lead">A parte mais importante na nossa evolução profissional é o
+                    desenvolvimento de
                     projetos, que nos possibilita 'botar a mão na massa' e praticar noassas habilidades. </p>
             </div>
         </section>
 
-        <!-- CARD 2 -->
-        <div class="row">
-
-            <!-- card-1 -->
-            <div class="card m-5 col-3">
-                <img class="img-fluid" src="./assets/montagem-familia.png" alt="" height="20px" width="50px">
-                <div class="card-body">
-                    <h5 class="card-title">TÍTULO DO PROJETO</h5>
-                    <p class="card-text">DESCRIÇÃO DO PROJETO.</p>
-                    <a href="#" class="btn btn-primary">VISITAR SITE DO PROJETO</a>
+        <!-- CARDS DE PROJETOS -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4 justify-content-center" id="cards-container">
+                    <!-- projeto-1 -->
+                    <!-- <div class="col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img class="card-img-top w-100" src="./assets/montagem-familia.png" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">TÍTULO DO PROJETO</h5>
+                                <p class="card-text">DESCRIÇÃO DO PROJETO.</p>
+                                <a href="#" class="btn btn-outline-primary w-100">VISITAR SITE DO PROJETO</a>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
-
-            <!-- card-2 -->
-            <div class="card m-5 col-3">
-                <img class="img-fluid" src="./assets/montagem-familia.png" alt="" height="20px" width="50px">
-                <div class="card-body">
-                    <h5 class="card-title">TÍTULO DO PROJETO</h5>
-                    <p class="card-text">DESCRIÇÃO DO PROJETO.</p>
-                    <a href="#" class="btn btn-primary">VISITAR SITE DO PROJETO</a>
-                </div>
-            </div>
-
-            <!-- card-3 -->
-            <div class="card m-5 col-3">
-                <img class="img-fluid" src="./assets/montagem-familia.png" alt="" height="20px" width="50px">
-                <div class="card-body">
-                    <h5 class="card-title">TÍTULO DO PROJETO</h5>
-                    <p class="card-text">DESCRIÇÃO DO PROJETO.</p>
-                    <a href="#" class="btn btn-primary">VISITAR SITE DO PROJETO</a>
-                </div>
-            </div>
-
-            <!-- card-4 -->
-            <div class="card m-5 col-3">
-                <img class="img-fluid" src="./assets/montagem-familia.png" alt="" height="20px" width="50px">
-                <div class="card-body">
-                    <h5 class="card-title">TÍTULO DO PROJETO</h5>
-                    <p class="card-text">DESCRIÇÃO DO PROJETO.</p>
-                    <a href="#" class="btn btn-primary">VISITAR SITE DO PROJETO</a>
-                </div>
-            </div>
-
-            <!-- card-5 -->
-            <div class="card m-5 col-3">
-                <img class="img-fluid" src="./assets/montagem-familia.png" alt="" height="20px" width="50px">
-                <div class="card-body">
-                    <h5 class="card-title">TÍTULO DO PROJETO</h5>
-                    <p class="card-text">DESCRIÇÃO DO PROJETO.</p>
-                    <a href="#" class="btn btn-primary">VISITAR SITE DO PROJETO</a>
-                </div>
-            </div>
-
-            <!-- card-6 -->
-            <div class="card m-5 col-3">
-                <img class="img-fluid" src="./assets/montagem-familia.png" alt="" height="20px" width="50px">
-                <div class="card-body">
-                    <h5 class="card-title">TÍTULO DO PROJETO</h5>
-                    <p class="card-text">DESCRIÇÃO DO PROJETO.</p>
-                    <a href="#" class="btn btn-primary">VISITAR SITE DO PROJETO</a>
-                </div>
-            </div>
-        </div>
+        </section>
 
     </main>
 
     <!-- FOOTER -->
-    <footer>
-        <div class="card">
+    <footer class="bg-light text-center py-auto mt-auto">
+        <div class="container">
             <div class="card-body text-center px-1 pt-1">
                 <figure>
                     <blockquote class="blockquote">
-                        <p class="fs-6">"Até porque, para nós, gatos, todas as coisas deste vasto mundo em que é
+                        <p class="fs-6 mb-0">"Até porque, para nós, gatos, todas as coisas deste vasto mundo em que é
                             possível subir são
                             consideradas vias públicas de acesso livre."</p>
                     </blockquote>
-                    <figcaption class="blockquote-footer">
+                    <figcaption class="blockquote-footer mt-1">
                         Relatos de um gato viajante por <cite title="Source Title">hiro Arikawa</cite>
                     </figcaption>
                 </figure>
@@ -203,6 +159,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+
+    <script src="/scripts/main.js"></script>
 </body>
 
 </html>
