@@ -1,0 +1,33 @@
+{
+  "name": "portfolio_isa_zambe",
+  "version": "1.0.0",
+  "description": "portfolioisz",
+  "homepage": "https://github.com/IsaZambe/portfolio_isa_zambe#readme",
+  "bugs": {
+    "url": "https://github.com/IsaZambe/portfolio_isa_zambe/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsaZambe/portfolio_isa_zambe.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "eslint": "^8.57.1",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.5.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2"
+  }
+}
